@@ -33,13 +33,13 @@ body {
     }
 
     .panel .description {
-        width: 20%;
+        width: 21%;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         text-align: left;
         color:white;
-        font-size: large;
+        font-size: 2vh;
         font-weight: bold;
     }
 
@@ -57,10 +57,11 @@ body {
     background-image: url(pic/b.jpg);
     /* background-color:grey; */
     z-index: 1;
+    background-size:100% 100%;
 }
 
     .bottom .description {
-        right: 5%;
+        right: 2%;
     }
 
 .top {
@@ -71,7 +72,7 @@ body {
 }
 
     .top .description {
-        left: 5%;
+        left: 3%;
     }
 
 /* Handle. */
@@ -108,8 +109,21 @@ body {
 }
 
 /* Responsive. */
+
+@media (max-width: 1800px) {
+    body {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 1400px) {
+    body {
+        font-size: 70%;
+    }
+}
+
 @media (max-width: 900px) {
     body {
-        font-size: 75%;
+        font-size: 50%;
     }
 }
